@@ -1,0 +1,191 @@
+<style>
+
+html,
+body {
+  font-family: monospace;
+  text-align: center;
+  background-color: black;
+  color: #2AF306; 
+  border-style: dashed;
+    border-width: 2px 10px;
+    border-radius: 10px;
+    border-color: red;
+    margin: 25px;
+}
+
+#name-block {
+  margin: none;
+}
+#name-text {
+  font-family: 'VT323', monospace;
+  font-size: 10em;
+  color: #D6FCC5;
+  animation: neon .7s ease-in-out infinite alternate;
+
+}
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(67,249,13,0.52),
+    0 0 21px rgba(67,249,13,0.92),
+    0 0 34px rgba(67,249,13,0.78),
+    0 0 54px rgba(67,249,13,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(67,249,13,0.58),
+    0 0 22px rgba(67,249,13,0.84),
+    0 0 38px rgba(67,249,13,0.88),
+    0 0 60px rgba(67,249,13,1);
+  }
+}
+
+@keyframes neon-white {
+  from {
+    text-shadow:
+    0 0 5px rgba(202,228,225,0.35),
+    0 0 7px rgba(202,228,225,0.21);
+    
+  }
+  to {
+    text-shadow:
+    0 0 5px rgba(202,228,225,0.29),
+    0 0 7px rgba(202,228,225,0.17);
+    
+  }
+}
+
+
+#choose {
+  
+  display: inline-block;
+  color: #A82CFE;
+
+}
+#choose-label {
+  font-size: 3em;
+  animation: neon-white 1s ease-in-out infinite alternate;
+}
+#choose-logo {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px 75px 25px 0;
+  
+}
+#yellow {
+  max-width: 110%;
+  
+}
+#red {
+  max-width: 110%;
+}
+#blue {
+  max-width: 110%;
+}
+#green{
+  max-width: 110%;
+}
+
+#where {
+  display: inline-block;
+  color: #F727E1;
+}
+
+#where-label {
+  font-size: 3em;
+  margin-bottom: 50px;
+  animation: neon-white 1s ease-in-out infinite alternate;
+}
+#where-logo {
+  display: flex;
+  padding: 0 275px 0 0;
+   
+}
+#world{
+  max-width: 21.57%;
+  
+}
+#shop{
+  max-width: 57%;
+}
+  
+#logo-text {
+  font-size: 21.75px;
+  color: #F727E1;
+}
+#logo-subtext {
+  font-size: 19px;
+  color: #2AF306;
+
+}
+
+
+
+#end {
+  margin: 100px 0 15px 0;
+}
+.end-text {
+  font-size: 17px;
+  color: #27F7E1;
+  
+}
+
+
+
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Arcade World</title>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Modak">
+ </head>
+ <body>
+   
+   
+<div id="name-block">
+  <h1 id="name-text">Repairo</h1>
+</div>
+   
+<div id="choose">
+  <h2 id="choose-label">Choose your new puzzle piece:</h2>
+  
+   <ul id="choose-logo" style="list-style: none"> 
+     <li> <img id="yellow" src="https://live.staticflickr.com/65535/47776413842_a1c02464bf_b.jpg" alt="Yellow Piece"></li>
+     <li><img id="red" src="https://live.staticflickr.com/65535/40862048943_8734a00c9d_b.jpg" alt="Red Piece"></li>
+     <li> <img id="blue" src="https://live.staticflickr.com/65535/47776414212_67b10233af_b.jpg" alt="Blue Piece"</li>
+     <li> <img id="green" src="https://live.staticflickr.com/65535/47776414072_90a41a167b_b.jpg" alt="Green Piece"> </li>
+  </ul>    
+</div> 
+  
+  <div id="where">
+  <h2 id="where-label">From where are you purchasing?</h2>
+  
+<ul id="where-logo" style="list-style: none"> 
+    <li> <img id="world" src="https://live.staticflickr.com/65535/47776681662_5310abb309_b.jpg" alt="Whole World">
+      <p id="logo-text"><strong>World</strong></p>
+      <p id="logo-subtext">You are buying from <br>an individual developer, <br>so download difficulty is high. <br>Pay <u>5 coins</u>.</p>
+  </li>
+   <li> <img id="shop" src="https://live.staticflickr.com/65535/47776933222_1d834550e4.jpg" alt="Repairo Shop"> <p id="logo-text"><strong>Shop</strong></p>
+       <p id="logo-subtext">You are buying from <br> the Repairo Shop, so download <br>difficulty is very low. <br>Pay <u>1 coin</u>.</p> 
+  </li>
+    </ul>    
+   </div>
+
+
+
+  <div id="end">
+  <p class="end-text">&copy; 2019 Repairo Group</p>
+</div> 
+
+    
+</body>
+</html>
